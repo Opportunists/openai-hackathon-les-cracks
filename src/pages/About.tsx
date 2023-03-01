@@ -3,9 +3,11 @@ import NavBar from "~/components/NavBar";
 import { GiStabbedNote } from 'react-icons/gi';
 import { FaChrome, FaSafari, FaFirefox } from 'react-icons/fa';
 
+import "~/styles/About.css";
+
 const Explanation = () => {
     return (
-        <div className="flex">
+        <div className="flex z-10">
             <div className="w-1/6 hidden md:block"> </div>
 
             <div className="flex px-[30px] md:w-4/6">
@@ -38,7 +40,8 @@ const Explanation = () => {
 const Plugins = () => {
     return (
         <div className="flex">
-            <div className="flex-auto text-center text-[50px] md:text-[70px] font-extrabold space-y-[8rem]">
+            <div className="absolute top-[20rem] right-0 semi-triangle"></div>
+            <div className="flex-auto text-center text-[50px] md:text-[70px] font-extrabold space-y-[8rem] z-10">
                 <h1>Add to all browsers for free !</h1>
                 <div className="hidden w-full justify-evenly space-x-5 md:flex">
                     <FaChrome size={"7rem"} />
