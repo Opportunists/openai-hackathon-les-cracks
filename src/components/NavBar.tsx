@@ -17,7 +17,7 @@ NavBarButton.propTypes = {
 
 function NavBar() {
     return (
-        <div className="w-full flex justify-between text-white px-[50px] pt-[35px]">
+        <div className="w-full flex absolute top-0 justify-between text-white px-[50px] pt-[35px]">
             <div className="text-white font-primary font-extrabold flex justify-center items-center" datatype="logo">
                 <div className="bg-white h-[35px] w-[5px] rounded-xl mr-3"></div>
                 <div className="flex flex-col h-auto">

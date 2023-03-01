@@ -7,6 +7,6 @@
 }
 
 .semi-circle {
-  @apply bg-secondary w-[20rem] h-[20rem];
+  @apply bg-secondary w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem];
   border-radius: 30rem 0 0 0;
 }
