@@ -4,17 +4,18 @@ import PropTypes from 'prop-types';
 class NavBarButton extends React.Component {
     render() {
         return (
-            <button className="text-white font-primary font-semibold text-[20px] hidden md:block
+            <a className="text-white font-primary font-semibold text-[20px] hidden md:block
                 hover:bg-white hover:bg-opacity-[20%] px-2 py-2 rounded-md
-            ">
+            " href={this.props.url}>
                 {this.props.text}
-            </button>
+            </a>
         )
     };
 }
 
 NavBarButton.propTypes = {
-    text: PropTypes.string
+    text: PropTypes.string,
+    url: PropTypes.string,
 }
 
 function NavBar() {
@@ -29,9 +30,9 @@ function NavBar() {
             </div>
 
             <div className="space-x-5 flex justify-center items-center" datatype="buttons">
-                <NavBarButton text={"About"} />
-                <NavBarButton text={"Home"} />
-                <NavBarButton text={"Start"} />
+                <NavBarButton text={"About"} url={"/about"} />
+                <NavBarButton text={"Home"} url={"/"}/>
+                <NavBarButton text={"Start"} url={"/start"}/>
 
                 <button className="space-y-2 md:hidden">
                     <div className="w-8 h-0.5 bg-white"></div>
