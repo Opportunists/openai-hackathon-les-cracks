@@ -1,9 +1,9 @@
 import React from "react"
 import NavBar from "~/components/NavBar"
-import "~/styles/App.css";
+import "~/styles/MainPage.css";
 
 
-function App() {
+function MainPage() {
   return (
     <div className="bg-primary w-screen h-screen font-primary text-white flex flex-col justify-center items-center">
       <NavBar />
@@ -35,4 +35,4 @@ function App() {
   )
 }
 
-export default App
+export default MainPage
