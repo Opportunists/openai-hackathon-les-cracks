@@ -7,6 +7,16 @@
 }
 
 .semi-circle {
-  @apply bg-secondary w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem];
+  @apply bg-secondary w-[15rem] h-[15rem] md:w-[30rem] md:h-[30rem];
   border-radius: 30rem 0 0 0;
+}
+
+.semi-triangle {
+   @apply
+      border-t-[58px] border-r-0 border-b-[187px] border-l-[125px]
+      border-t-transparent border-r-transparent border-b-transparent border-l-secondary
+      md:border-t-[100px] md:border-r-0 md:border-b-[260px] md:border-l-[250px]
+      lg:border-t-[200px] lg:border-r-0 lg:border-b-[520px] lg:border-l-[500px]
+      border-solid;
+   transform: rotate(0deg);
 }

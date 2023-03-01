@@ -8,6 +8,8 @@ function App() {
     <div className="bg-primary w-screen h-screen font-primary text-white flex flex-col justify-center items-center">
       <NavBar />
 
+      <div className="absolute top-[100px] left-0 semi-triangle"></div>
+
       <div className="flex flex-col px-[10px] md:px-[40px] z-10">
         <h1 className="text-[40px] md:text-[70px] text-center font-bold" datatype="title">
           Streamline Your Legal Research
