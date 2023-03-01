@@ -5,3 +5,8 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 3; /* Number of lines to show */
 }
+
+.semi-circle {
+  @apply bg-secondary w-[20rem] h-[20rem];
+  border-radius: 30rem 0 0 0;
+}
