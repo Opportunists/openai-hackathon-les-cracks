@@ -1,0 +1,16 @@
+.semi-triangle {
+    @apply
+        border-t-[20rem] border-r-[50rem] border-l-[30rem] border-b-[30rem]
+        md:border-t-[50rem] md:border-r-[50rem] md:border-l-[30rem] md:border-b-[30rem]
+        border-solid
+        border-t-transparent border-r-secondary border-b-transparent border-l-transparent;
+    transform: rotate(0deg);
+ }
+
+.semi-circle {
+width: 60rem;
+height: 30rem;
+@apply bg-secondary;
+border-radius: 30rem 30rem 0 0;
+transform: rotate(90deg);
+}

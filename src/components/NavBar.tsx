@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class NavBarButton extends React.Component {
     render() {
         return (
-            <a className="text-white font-primary font-semibold text-[40px] hidden md:block
+            <a className="text-white font-primary font-semibold text-[20px] hidden md:block
                 hover:bg-white hover:bg-opacity-[20%] px-2 py-2 rounded-md
             " href={this.props.url}>
                 {this.props.text}
