@@ -11,11 +11,11 @@ function MainPage() {
       <div className="absolute top-[100px] left-0 semi-triangle"></div>
 
       <div className="flex flex-col px-[10px] md:px-[40px] z-10">
-        <h1 className="text-[40px] md:text-[70px] text-center font-bold" datatype="title">
+        <h1 className="text-[40px] md:text-[70px] lg:[90px] text-center font-bold" datatype="title">
           Streamline Your Legal Research
         </h1>
 
-        <h3 className="text-[20px] md:text-[25px] line-clamp-3 text-center pt-[30px]">
+        <h3 className="text-[20px] md:text-[25px] lg:[45px] line-clamp-3 text-center pt-[30px]">
           AI-Powered Analysis of Terms & Conditions
         </h3>
       </div>

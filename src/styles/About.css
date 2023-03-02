@@ -2,6 +2,7 @@
     @apply
         border-t-[20rem] border-r-[50rem] border-l-[30rem] border-b-[30rem]
         md:border-t-[50rem] md:border-r-[50rem] md:border-l-[30rem] md:border-b-[30rem]
+        lg:border-t-[40rem] lg:border-r-[40rem] lg:border-l-[25rem] lg:border-b-[25rem]
         border-solid
         border-t-transparent border-r-secondary border-b-transparent border-l-transparent;
     transform: rotate(0deg);
