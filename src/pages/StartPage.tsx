@@ -5,7 +5,7 @@ import { ReactNotifications } from 'react-notifications-component'
 import 'react-notifications-component/dist/theme.css'
 
 // Link to BAC api
-const API_URL = "192.168.52.83";
+const API_URL = "192.168.52.83:8000";
 
 function TextArea(props) {
     /*
@@ -14,7 +14,7 @@ function TextArea(props) {
         <!-- ... -->
     </ul>
     */
-
+    console.log(props.text);
     return (
         <ul className={`w-7/12 mb-4 bg-white/[25%] py-[25px] px-[25px] ${props.show ? '' : 'hidden'} list-disc`} >
             {props.text}
