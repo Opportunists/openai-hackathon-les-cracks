@@ -52,14 +52,14 @@ class Form extends React.Component {
 
     fetchData() {
         const requestOptions = {
-            method: 'POST',
+            method: 'GET',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                url: this.state.urlText
-            })
+            // body: JSON.stringify({
+            //     url: this.state.urlText
+            // })
         };
 
-        fetch(`${API_URL}/websites`, requestOptions)
+        fetch(`http://localhost:8000/websites`, requestOptions)
             .then(response => response.json())
             .then(data => {
                 this.setState({ processedText: data.result })
