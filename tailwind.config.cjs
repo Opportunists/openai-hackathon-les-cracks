@@ -12,8 +12,8 @@ module.exports = {
         "primary": ['Montserrat', 'sans-serif']
       },
       colors: {
-        primary: "#EE5050",
-        secondary: "#CF3A3A"
+        primary: "#3B2125",
+        secondary: "#932421"
       },
     },
   },
