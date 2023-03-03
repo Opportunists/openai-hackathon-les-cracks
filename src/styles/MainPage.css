@@ -11,6 +11,7 @@
   border-radius: 30rem 0 0 0;
 }
 
+
 .semi-triangle {
    @apply
       border-t-[58px] border-r-0 border-b-[187px] border-l-[125px]
