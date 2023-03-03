@@ -1,7 +1,12 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-class NavBarButton extends React.Component {
+interface NavBarButtonProps {
+    text: string,
+    url: string,
+}
+
+class NavBarButton extends React.Component<NavBarButtonProps>{
     render() {
         return (
             <a className="text-white font-primary font-semibold text-[20px] hidden md:block
@@ -11,11 +16,6 @@ class NavBarButton extends React.Component {
             </a>
         )
     };
-}
-
-NavBarButton.propTypes = {
-    text: PropTypes.string,
-    url: PropTypes.string,
 }
 
 function NavBar() {
