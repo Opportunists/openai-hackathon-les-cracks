@@ -15,9 +15,14 @@ function TextArea(props) {
     </ul>
     */
     console.log(props.text);
+    const arrayText = props.text;
     return (
-        <ul className={`w-7/12 mb-4 bg-white/[25%] py-[25px] px-[25px] ${props.show ? '' : 'hidden'} list-disc`} >
-            {props.text}
+        <ul className={`w-7/12 mb-4 bg-white/[25%] py-[25px] px-[25px] ${props.show ? '' : 'hidden'} list-disc h-auto`} >
+            {
+                arrayText.map((elt) => {
+                    return <li className="font-medium">{elt.replace("-", "")}</li>
+                })
+            }
         </ul>
     )
 }
@@ -28,7 +33,7 @@ class Form extends React.Component {
         this.state = {
             urlText: "",
             showText: false,
-            processedText: ""
+            processedText: []
         };
         this.fetchData = this.fetchData.bind(this);
     }
@@ -59,10 +64,10 @@ class Form extends React.Component {
             // })
         };
 
-        fetch(`http://localhost:8000/websites`, requestOptions)
+        fetch(`http://192.168.52.83:8000/websites/detail/${encodeURIComponent(this.state.urlText)}`, requestOptions)
             .then(response => response.json())
             .then(data => {
-                this.setState({ processedText: data.result })
+                this.setState({ processedText: data.content })
                 this.setState({ showText: true });
                 this.sendNotification("Success", "Url processed", "success");
             }
@@ -74,7 +79,7 @@ class Form extends React.Component {
 
     render() {
         return (
-            <div className="flex justify-center items-center h-full w-full flex-col space-y-[4rem]">
+            <div className="flex justify-center items-center h-auto w-screen flex-col space-y-[4rem] min-h-screen">
                 <div className="h-auto flex w-2/3 text-center text-white flex-col justify-center items-center space-y-5">
                     <h1 className="text-[90px] font-bold">Analyze Terms of Use</h1>
                     <h2 className="text-[25px] w-2/3">
