@@ -30,8 +30,8 @@ function NavBar() {
             </div>
 
             <div className="space-x-5 flex justify-center items-center" datatype="buttons">
-                <NavBarButton text={"About"} url={"/about"} />
                 <NavBarButton text={"Home"} url={"/"}/>
+                <NavBarButton text={"About"} url={"/about"} />
                 <NavBarButton text={"Start"} url={"/start"}/>
 
                 <button className="space-y-2 md:hidden">
