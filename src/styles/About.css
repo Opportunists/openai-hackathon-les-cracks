@@ -1,17 +1,16 @@
-.semi-triangle {
+ .semi-triangle {
     @apply
-        border-t-[20rem] border-r-[50rem] border-l-[30rem] border-b-[30rem]
-        md:border-t-[50rem] md:border-r-[50rem] md:border-l-[30rem] md:border-b-[30rem]
-        lg:border-t-[40rem] lg:border-r-[40rem] lg:border-l-[25rem] lg:border-b-[25rem]
-        border-solid
-        border-t-transparent border-r-secondary border-b-transparent border-l-transparent;
+       border-t-[58px] border-r-0 border-b-[187px] border-l-[125px]
+       border-t-transparent border-r-transparent border-b-transparent border-l-secondary
+       md:border-t-[100px] md:border-r-0 md:border-b-[260px] md:border-l-[250px]
+       lg:border-t-[200px] lg:border-r-0 lg:border-b-[520px] lg:border-l-[500px]
+       border-solid;
     transform: rotate(0deg);
  }
 
-.semi-circle {
-width: 60rem;
-height: 30rem;
-@apply bg-secondary;
-border-radius: 30rem 30rem 0 0;
-transform: rotate(90deg);
-}
+
+.semi-circle1 {
+    @apply bg-secondary w-[15rem] h-[30rem] md:w-[20rem] md:h-[40rem];
+    border-radius: 30rem 0rem 0 30rem;
+  }
+
