@@ -3,16 +3,8 @@ import NavBar from "~/components/NavBar";
 import { GiStabbedNote } from 'react-icons/gi';
 import { FaChrome, FaSafari, FaFirefox } from 'react-icons/fa';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
-
-import yassineIMG from '~/assets/yassine.jpeg';
-import paramIMG from '~/assets/param.jpeg';
-import raphaelIMG from '~/assets/raphael.jpeg';
-import amineIMG from '~/assets/amine.jpeg';
-import kevinIMG from '~/assets/kevin.jpeg';
-import charlesIMG from '~/assets/charles.jpeg';
-
-
 import "~/styles/About.css"
+import { JSONTeam } from "~/utils/dataJSON";
 
 const ProductDescription = () => {
     return (
@@ -48,7 +40,7 @@ const Team = () => {
         name: string;
         job: string;
         linkedinUrl: string;
-        githubURL: string;
+        githubURL ?: string;
     }
 
     const Avatar: React.FC<AvatarProps> = (props) => {
@@ -65,10 +57,10 @@ const Team = () => {
                             </a>
                             {
                                 props.githubURL
-                                ? <a className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button" href={props.githubURL}>
-                                    <BsGithub size={"2rem"} />
-                                </a>
-                                : ''
+                                    ? <a className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button" href={props.githubURL}>
+                                        <BsGithub size={"2rem"} />
+                                    </a>
+                                    : ''
                             }
                         </div>
                     </div>
@@ -85,23 +77,11 @@ const Team = () => {
                         Meet the team
                     </h1>
                     <div className="flex flex-wrap justify-center items-center lg:px-[10rem]">
-                        <Avatar imageUrl={yassineIMG} job={"cybersecurity student"}
-                            name={"Yassine Damiri"} linkedinUrl={"https://www.linkedin.com/in/yassine-damiri/"} githubURL={"https://github.com/Yasha-ops"} />
-
-                        <Avatar imageUrl={paramIMG} job={"Computer science student" }
-                            name={"Param Dave"} linkedinUrl={"https://www.linkedin.com/in/param-dave-75594517b/"} />
-
-                        <Avatar imageUrl={raphaelIMG} job={"Computer science student" }
-                            name={"Raphaël Duhen"} linkedinUrl={"https://www.linkedin.com/in/raphael-duhen/"} />
-
-                        <Avatar imageUrl={amineIMG} job={"Computer Science student"}
-                            name={"Amine"} linkedinUrl={"https://www.linkedin.com/in/amine-el-maghraoui/"} />
-
-                        <Avatar imageUrl={kevinIMG} job={"Computer Science student"}
-                            name={"Kevin N'Diaye"} linkedinUrl={"https://www.linkedin.com/in/kevin-n-diaye/"} />
-
-                        <Avatar imageUrl={charlesIMG} job={"Computer Science student" }
-                            name={"Charles Arsenac"} linkedinUrl={"https://www.linkedin.com/in/charles-andre-arsenec/"} />
+                        {
+                            JSONTeam.map((elt) => {
+                                return <Avatar imageUrl={elt.imageUrl} job={elt.job} name={elt.name} linkedinUrl={elt.linkedinUrl} githubURL={elt.githubURL}/>
+                            })
+                        }
                     </div>
                 </div>
             </div>
