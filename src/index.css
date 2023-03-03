@@ -9,3 +9,13 @@ body, html, #root {
     width: 100%;
     height: max-content;
 }
+
+
+@layer utilities {
+    .animation-delay-start {
+      animation-delay: 2s;
+    }
+    .animation-delay-400 {
+      animation-delay: 4s;
+    }
+  }

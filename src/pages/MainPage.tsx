@@ -22,10 +22,10 @@ function MainPage() {
 
       <div className="flex space-x-5 md:space-x-[120px] pt-[70px] justify-center items-center z-10">
         <button className="text-[20px] md:text-[30px] px-3 py-3 border-white border-[4px] rounded-[10px] font-bold
-          hover:text-primary hover:bg-white
+          hover:text-primary hover:bg-white hover:animate-none animate-wiggle-start
         ">START NOW</button>
         <button className="text-[20px] md:text-[30px] px-3 py-3 text-primary border-[4px] rounded-[10px] font-bold bg-white
-          hover:text-white hover:bg-transparent transition ease-in-out duration-100
+          hover:text-white hover:bg-transparent transition ease-in-out duration-100 poo
         ">LEARN MORE</button>
       </div>
 
