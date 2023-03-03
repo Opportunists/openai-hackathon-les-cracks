@@ -9,7 +9,7 @@ function ErrorPage() {
         <h1 className="text-6xl font-bold">Oops !</h1>
         <h2 className="text-2xl">Sorry, an unexpected error has occured</h2>
 
-        <h2 className="text-3xl font-light mt-[100px]">404 Not Found</h2>
+        <h2 className="text-3xl font-light mt-[100px]">Error occured !</h2>
     </div>
     )
 

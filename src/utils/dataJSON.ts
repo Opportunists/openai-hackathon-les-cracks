@@ -18,29 +18,34 @@ export const JSONTeam = [
         job: "Computer science student",
         name: "Param Dave",
         linkedinUrl: "https://www.linkedin.com/in/param-dave-75594517b/",
+        githubURL: "https://github.com/paramoklm"
     },
     {
         imageUrl: raphaelIMG,
         job: "Computer science student",
         name: "Raphaël Duhen",
         linkedinUrl: "https://www.linkedin.com/in/raphael-duhen/",
+        githubURL: "https://github.com/HoloTheDrunk"
     },
     {
         imageUrl: amineIMG,
         job: "Computer Science student",
         name: "Amine",
         linkedinUrl: "https://www.linkedin.com/in/amine-el-maghraoui/",
+        githubURL: ""
     },
     {
         imageUrl: kevinIMG,
         job: "Computer Science student",
         name: "Kevin N'Diaye",
         linkedinUrl: "https://www.linkedin.com/in/kevin-n-diaye/",
+        githubURL: "https://github.com/K-bNd"
     },
     {
         imageUrl: charlesIMG,
         job: "Computer Science student",
-        name: "Charles Arsenac",
-        linkedinUrl: "https://www.linkedin.com/in/charles-andre-arsenec/"
+        name: "Charles Arsenec",
+        linkedinUrl: "https://www.linkedin.com/in/charles-andre-arsenec/",
+        githubURL: "https://github.com/Ekliipce"
     }
 ]

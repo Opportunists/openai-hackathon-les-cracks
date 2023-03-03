@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import { ReactNotifications } from 'react-notifications-component'
 
 interface NavBarButtonProps {
     text: string,
@@ -29,16 +30,18 @@ function NavBar() {
                 </div>
             </div>
 
-            <div className="space-x-[3rem] flex justify-center items-center" datatype="buttons">
-                <NavBarButton text={"Home"} url={"/"}/>
-                <NavBarButton text={"About"} url={"/about"} />
-                <NavBarButton text={"Start"} url={"/start"}/>
+            <div className="flex flex-col">
+                <div className="space-x-[3rem] flex justify-center items-center" datatype="buttons">
+                    <NavBarButton text={"Home"} url={"/"} />
+                    <NavBarButton text={"About"} url={"/about"} />
+                    <NavBarButton text={"Start"} url={"/start"} />
 
-                <button className="space-y-2 md:hidden">
-                    <div className="w-8 h-0.5 bg-white"></div>
-                    <div className="w-8 h-0.5 bg-white"></div>
-                    <div className="w-8 h-0.5 bg-white"></div>
-                </button>
+                    <button className="space-y-2 md:hidden">
+                        <div className="w-8 h-0.5 bg-white"></div>
+                        <div className="w-8 h-0.5 bg-white"></div>
+                        <div className="w-8 h-0.5 bg-white"></div>
+                    </button>
+                </div>
             </div>
         </div>
     );

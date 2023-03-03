@@ -121,15 +121,10 @@ function AboutPage() {
     return (
         <div className="bg-primary w-full h-auto font-primary text-white flex flex-col justify-center items-center md:pt-[4rem] lg:pt-[0rem]">
             <NavBar />
-
             <div className="absolute top-[100px] left-0 semi-triangle"></div>
-
             <ProductDescription />
-
             <div className="absolute bottom-0 right-0 semi-circle1"></div>
-
             <Team />
-
             <GetProduct />
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#932421" fill-opacity="1" d="M0,128L24,149.3C48,171,96,213,144,224C192,235,240,213,288,181.3C336,149,384,107,432,112C480,117,528,171,576,186.7C624,203,672,181,720,186.7C768,192,816,224,864,197.3C912,171,960,85,1008,64C1056,43,1104,85,1152,106.7C1200,128,1248,128,1296,133.3C1344,139,1392,149,1416,154.7L1440,160L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
