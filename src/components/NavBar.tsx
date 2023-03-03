@@ -9,7 +9,7 @@ interface NavBarButtonProps {
 class NavBarButton extends React.Component<NavBarButtonProps>{
     render() {
         return (
-            <a className="text-white font-primary font-semibold text-[20px] hidden md:block
+            <a className="text-white font-primary font-semibold text-[2rem] hidden md:block
                 hover:bg-white hover:bg-opacity-[20%] px-2 py-2 rounded-md
             " href={this.props.url}>
                 {this.props.text}
@@ -29,7 +29,7 @@ function NavBar() {
                 </div>
             </div>
 
-            <div className="space-x-5 flex justify-center items-center" datatype="buttons">
+            <div className="space-x-[3rem] flex justify-center items-center" datatype="buttons">
                 <NavBarButton text={"Home"} url={"/"}/>
                 <NavBarButton text={"About"} url={"/about"} />
                 <NavBarButton text={"Start"} url={"/start"}/>
