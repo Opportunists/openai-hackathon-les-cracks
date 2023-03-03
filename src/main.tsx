@@ -11,20 +11,20 @@ import "./index.css";
 
 import { UseIt } from './pages/UseIt'
 /* Pages */
-import MainPage from './pages/MainPage'
-import AboutPage from './pages/About';
-import ErrorPage from './pages/ErrorPage';
-
+import MainPage from '~/pages/MainPage'
+import AboutPage from '~/pages/About';
+import ErrorPage from '~/pages/ErrorPage';
+import StartPage from '~/pages/StartPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainPage/>,
-    // errorElement: <ErrorPage/>
+    errorElement: <ErrorPage/>
   },
   {
     path: "/start",
-    element: <UseIt/>
+    element: <StartPage/>
   },
   {
     path: "/about",
